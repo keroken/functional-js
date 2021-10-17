@@ -1,8 +1,7 @@
 const oneSecond = () => 1000;
 const getCurrentTime = () => new Date();
 const clear = () => console.clear();
-const screenEl = document.getElementById("clock-display");
-const output = message => screenEl.innerText = message;
+const output = message => document.getElementById("clock-display").innerText = message;
 
 serializeClockTime = date => ({
   hours: date.getHours(),
